@@ -1,0 +1,11 @@
+templates
+sample
+**/__pycache__/
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+.env
+*.log

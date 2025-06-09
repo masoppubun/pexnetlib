@@ -1,0 +1,23 @@
+# pyproject.toml
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pexnetlib"
+version = "0.1.0"
+description = "A telnet automation library for network devices"
+authors = [{name = "masobun", email = "spice.alone@gmail.com"}]
+license = { text = "MIT" }
+readme = "README.md"
+dependencies = [
+    "pexpect>=4.9.0",
+    "telnetlib3>=2.0.4"
+]
+requires-python = ">=3.6"
+
+[tool.hatch.build.targets.sdist]
+include = ["src/pexnetlib/", "README.md"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pexnetlib"]
